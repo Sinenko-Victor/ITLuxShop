@@ -1,0 +1,12 @@
+User-agent: *
+
+Allow: /
+Sitemap: http://shop.itlux.com.ua/sitemap.xml
+
+Disallow: /application/
+Disallow: /system/
+Disallow: /modules/
+Disallow: /media/
+Disallow: /media_admin/
+Disallow: /lib/
+Disallow: /admin/

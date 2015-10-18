@@ -1,0 +1,135 @@
+.catalog_tiles {//zoom:1; padding: 0 0 20px; position: relative; z-index:1;}
+.catalog_tiles_in {margin: -15px 0 0 -10px; //zoom:1; font-size: 0;}
+.catalog_tiles_in:after {font-size:0;display:block;visibility:hidden;clear:both;height:0;content:".";line-height:0;}
+
+.catalog_tile_item {display: inline-block; //display: inline; //zoom:1; font-size: 12px; vertical-align: top; padding: 15px 0 0 10px; width: 19.5em;}
+
+.catalog_tile_item_in {
+position: relative;
+height: 26em;
+}
+
+/*magic*/
+.catalog_tile_item:hover {z-index: 2 !important; position: relative;}
+
+.cti_in_description_cont {display:none;}
+.catalog_tile_item:hover .cti_in_description_cont{display:block;}
+.catalog_tile_item:hover .cti_in{
+border:1px solid #6aa667;
+-webkit-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+-moz-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+}
+
+.catalog_tile_item_in2 {
+position: relative;
+height: 25em;
+}
+
+.catalog_tile_item_labeled .catalog_tile_item_in2 {height: 42em;}
+
+.cti {
+width: 100%;
+position: absolute; 
+left: 0; 
+top: 0;
+}
+
+.plit_in {
+background:#fff;
+overflow: hidden; //zoom:1;
+border: 2px solid #cccccc;
+border-radius: 10px; 	
+-moz-border-radius: 10px; 	
+-webkit-border-radius: 10px;
+-webkit-box-shadow: rgba(0,0,0,0.3) 0px 0px 3px;
+-moz-box-shadow: rgba(0,0,0,0.3) 0px 0px 3px;
+box-shadow: rgba(0,0,0,0.3) 0px 0px 3px;
+padding: 15px;
+}
+.plit_in:hover {
+    border: 2px solid #66CC66;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.cti_image {
+    text-align: center; 
+    height: 150px; 
+    padding: 0 0 15px; 
+    overflow: hidden; //zoom:1; 
+    outline: 0px solid #000;
+}
+
+.cti_head 
+{  
+    overflow: hidden; //zoom:1; 
+    height: 50px; 
+    overflow: hidden; //zoom:1;
+    outline: 0px solid #000;
+}
+
+.cti_head a
+{ 
+    font: 13px  Verdana;
+    color: #000000;
+    text-decoration: none;
+}
+.cti_head a:hover
+{ 
+    color: #FF6600;
+}
+
+.cti_kod_box {
+    position: absolute;
+    top: 155px; /* Положение слоя от верхнего края */
+    left: 100px; /* Положение слоя от левого края */
+    width: 120px;  /* Ширина блока */
+    height: 20px; /* Высота */
+    border: 1px solid #006600; /* Параметры рамки */
+    border-radius:10px; /* Закругление рамки */
+    background: #cccccc; /* Цвет фона */
+    text-align: center; /* Выровнять содержимое */
+}
+
+.cti_kod { 
+    color : #000000; 
+    font: 16px  Verdana;
+    outline: 0px solid #000;
+}
+
+.cti_info {
+    height: 14px; 
+    color:#6f6f6f; 
+    padding: 0 0 5px;
+    outline: 0px solid #000;
+}
+.cti_info .zak {
+    font-size: 14px; 
+    color:#068000; 
+    font-weight: bold;
+}
+
+.cti_brend { 
+    color : #669900; 
+    font: 14px  Verdana;
+    outline: 0px solid #000;
+}
+
+
+.cti_stock {
+    color:#000; 
+    font-weight: bold; 
+    padding: 0 0 15px; 
+    white-space: nowrap;
+}
+
+.cti_end {
+    overflow: hidden; //zoom:1;
+}
+.cti_end a{ float: right;}
+.cti_end_l {float: left;}
+.cti_end_r {float: right;}
+
+.cti_price {white-space: nowrap; padding: 10px 0px 0px; }
+.cti_price .end {font-size: 20px; color:#FF6633;}
+.cti_price .grn {font-size: 14px; color:#FF6633;}

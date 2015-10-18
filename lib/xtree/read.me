@@ -1,0 +1,55 @@
+//
+// (C) mkp, 2007
+// Author: Mastushkin Kirill. Tomsk.
+// E-mail: mkp@inbox.ru, mkp@tpce.tomsk.ru
+// ICQ: 169035175
+//
+ 
+  Использование:
+
+  // Подключаем библиотеку
+  require('./xtree.lib.php');
+
+  // Создаём элемент класса
+  $tree = new xtree( $text [, $treeID] );
+    где  $text - текст рута
+         $treeID - идентификатор дерева
+
+  // Указываем каталог с имджами
+  $tree->SetImagePath($imagePath);
+
+  // Добавляем имиджи
+  $tree->AddNodeImage($imageID);
+  $tree->AddNodeImage($imageID [, $imageName] );
+    где $imageID - идентификатор имиджа
+        $imageName - имя файла имиджа
+        если $imageName не указан, то именем файла будет  $imagePath . $imageID . '.gif';
+                                                   иначе  $imagePath . $imageName;
+
+  // по умолчанию в имиджлист будет добавлен имидж $imagePath . 'folder.gif'
+  // надо добавить имидж: 'root' - имидж рута
+  $tree->AddNodeImage('root', 'home.gif');
+
+  // Добавляем ноды
+  $tree->AddNode($parentNodeID, $nodeID, $nodeText, $imageID [, <true/false>] );
+    где  $parentNodeID - идентификатор родительской ноды (если он = '' - значит добавляем под рутовую ноду)
+    $nodeID - идентификатор ноды
+    $nodeText - собственно текст узла
+    $imageID - идентификатор имиджа
+    <true/false> - при отрисовке открыть или закрыть ветку
+
+  // Рисуем
+  $tree->show();
+
+  при открытии/закрытиии выставляется кука с именем 'tree_' . $treeID . $nodeID  со значениями open/close
+  функция cookievalue($name, $val) - возвращает true в случае, если кука $name == $val - иначе false 
+
+  а вообще - методом тыка можно познать всё.
+  спрашивайте / сообщайте об ошибках / предлагайте работу
+
+//
+// (C) mkp, 2007
+// Author: Mastushkin Kirill. Tomsk.
+// E-mail: mkp@inbox.ru, mkp@tpce.tomsk.ru
+// ICQ: 169035175
+//

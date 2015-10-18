@@ -1,0 +1,1 @@
+<?=$site_name?> | © 2014 ITLux

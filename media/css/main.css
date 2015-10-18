@@ -1,0 +1,787 @@
+@import url("reset.css"); /* Сброс стилей поумолчанию */
+@import url("fonts.css"); /* Подключаем файл с стилями шрифтов */
+@import url("login.css"); /* Подключаем файл с стилями верхнего меню */
+
+
+h1 {
+padding: 10px 0px 5px 0px; /* Внутриние отступы */
+text-align: center; /* Выровнять содержимое по центру */
+color : #336600;
+font : 20px  Verdana;
+}
+
+/*-------------------------------------------------- INDEX */
+
+body {
+margin: 0; /* Отступы на странице */
+}
+
+#container {
+width: 100%; /* Ширина блока */
+height: 100%; /* Высота блока */
+min-width: 1000px; /* Минимальная ширина */
+background-image: url(/media/img/mainfont.png); 
+background-repeat: repeat-x;
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+}
+
+#header {
+height: 160px; /* Высота блока */
+margin: 0px 0px 0px 0px; /* Внешние отступы */
+text-align: left; /* Выравнивание по центру */
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+}
+
+#main{
+min-height: 550px; /* Минимальная высота блока */
+margin: 0 auto; /* Выравниваем по центру по горезонтали */
+padding: 0; /* Внутриние отступы */ 
+width: 1000px;  /* Ширина блока */
+background: #ffffff; /* Цвет фона */
+border-radius:10px 10px 10px 10px; /* Закругление рамки */
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+}
+
+#doun { 
+clear: both; /* Отменяем действие float */
+padding: 0px; /* Отступы вокруг текста */
+height: 5px; /* Высота блока */
+text-align: center; /* Выровнять содержимое по центру */
+margin: 0 auto; /* Выравниваем по центру по горезонтали */
+width: 1000px;  /* Ширина блока */
+background-position: bottom;
+background: #669966; /* Цвет фона */
+}
+
+#footer { 
+padding: 5px 0 5px 0; /* Отступы вокруг текста  */
+height: 20px; /* Высота блока */
+text-align: center; /* Выровнять содержимое по центру */
+background-position: bottom;
+background: #669966; /* Цвет фона */
+}
+
+/*-------------------------------------------------- /INDEX */
+
+/*-------------------------------------------------- HEADER */
+
+#headermenu{
+height: 0px; /* Высота блока */
+margin: 0 auto; /* Выравниваем по центру по горезонтали */
+padding: 0; /* Внутриние отступы */ 
+width: 1000px;  /* Ширина блока */
+text-align: right; /* Выравнивание по центру */
+}
+
+#logobox{
+position: absolute;
+margin: 30px 0px 0px 0px; /* Внешние отступы */
+height: 130px; /* Высота блока */
+left: 50%;
+margin-left: -500px; /* отрицательный отступ равный 1/2 ширины (width) позиционируемого блока */
+width: 1000px;  /* Ширина блока */
+background: #ffffff; /* Цвет фона */
+border-radius:10px 10px 0px 0px; /* Закругление рамки */
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+}
+
+#logo{
+top: 0px; /* Положение слоя от верхнего края */
+left: 0px; /* Положение слоя от левого края */
+width: 250px;  /* Ширина блока */
+height: 130px; /* Высота блока */
+background-image: url(/media/img/logo-max.png);
+background-repeat: no-repeat;
+background-position: center center;
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+}
+
+#logo a{
+z-index: 1;
+display: block; /* Ссылка как блочный элемент */
+height: 130px; /* Высота на весь слой */
+width: 250px;  /* Ширина блока */
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+}
+
+#slogan{
+float: left;  /* Обтекание слева */
+position: absolute;
+top: 100px;
+left: 270px; /* Положение слоя от левого края */
+width: 500px;  /* Ширина блока */
+font: 16px  Verdana;
+color: #669966;
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+}
+
+#telefon{
+position: absolute;
+top: 20px;
+left: 610px; /* Положение слоя от левого края */
+width: 230px;  /* Ширина блока */
+height: 80px; /* Высота на весь слой */
+text-align: left; /* Выровнять содержимое */
+font: 16px  Verdana;
+color: #336633;
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+}
+
+/*-------------------------------------------------- /HEADER */
+
+/*-------------------------------------------------- Центральный блок */
+
+#pages_list {
+width: 1000px; /* Ширина слоя */
+margin: 10px auto; /* Выравнивание по центру */
+outline: 0px solid #сссссс; /* временая рамка для разметки */
+}
+
+/* Левый блок */
+#pages_dir { 
+width: 240px; /* Ширина слоя */
+padding: 5px; /* Отступы вокруг текста */
+float: left; /* Обтекание по правому краю */
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+}
+
+/* Основной блок */
+#pages_edit {
+margin-left: 250px; /* Отступ слева */
+padding: 10px 0px 10px 10px; /* Поля вокруг текста */
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+}
+
+/* Строка родительских категорий */
+#ca_line {
+float: left;  /* Обтекание слева */
+width: 500px; /* Ширина слоя */
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+}
+
+#sel_vid {
+float: right;  /* Обтекание справа */
+width: 120px; /* Ширина слоя */
+margin: 0px 10px; /* Выравнивание по центру */
+text-align: center; /* Выровнять содержимое */
+border-radius: 5px 5px 5px 5px; /* Закругление рамки */
+border: 1px solid #336600; /* Параметры рамки */
+background: #99CC99; /* Цвет фона */
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+}
+
+#pages_edit img{
+border-radius:10px 10px 10px 10px; /* Закругление рамки */
+border: 0px solid #3399cc; /* временая рамка для разметки */
+}
+
+#pages_footer { 
+clear: left; /* Отменяем действие float */
+}
+
+/*-------------------------------------------------- /Центральный блок */
+
+/*--------------------------------------------------  Кнопка поиска */
+
+.searchform {
+    position: absolute;
+    top: 20px; /* Отступ сверху */
+    left: 270px; /* Положение слоя от левого края */
+	display: inline-block;
+	zoom: 1; /* ie7 hack for display:inline-block */
+	*display: inline;
+	border: solid 0px #6aa667;
+	padding: 0px 0px;
+    outline: 0px solid #950; /* временая рамка для разметки */
+	
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+
+	-webkit-box-shadow: 0 1px 0px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 1px 0px rgba(0,0,0,.1);
+	box-shadow: 0 1px 0px rgba(0,0,0,.1);
+
+	background: #ffffff;
+}
+
+#searchgo{
+position: absolute;
+z-index: 3 !important;
+top: 80px; /* Отступ сверху */
+left: 270px; /* Положение слоя от левого края */
+width: 700px;  /* Ширина блока */
+padding: 10px; /* Внутриние отступы */
+border: 1px solid #336633; /* Параметры рамки */
+border-radius:10px; /* Закругление рамки */
+background: #99CC99; /* Цвет фона */
+}
+
+.searchform input {
+	font: normal 16px Arial, Helvetica, sans-serif;
+}
+.searchform .searchfield {
+	background: #fff;
+	padding: 6px 6px 6px 8px;
+	width: 250px;
+	border: solid 3px #336633;
+	outline: none;
+
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.1);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.1);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+.searchform .searchbutton {
+	cursor: pointer;
+    background: #99CC99;
+	border: solid 3px #336633;
+	font-size: 14px;
+	height: 36px;
+	width: 60px;
+
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+
+}
+/*-------------------------------------------------- / Кнопка поиска */
+
+/*-------------------------------------------------- Стиль для корзины */
+
+/* Над корзиной */
+#cart_top{
+position: absolute;
+font: 14px  Verdana;
+top: 19px; /* Отступ сверху */
+left: 885px; /* Положение слоя от левого края */
+width: 110px;  /* Ширина блока */
+height: 20px; /* Высота блока */
+text-align: left; /* Выровнять содержимое по центру */
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+}
+
+/* картинка корзины */
+#cart_top_logo{
+position: absolute;
+top: 0px;
+left: 840px; /* Положение слоя от левого края */
+width: 135px;  /* Ширина блока */
+height: 120px; /* Высота блока */
+padding: 0px 0px 0px 0px; /* Поля вокруг текста */
+text-align: center; /* Выровнять содержимое по центру */
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+background-image: url(/media/img/cart-128_in.png);
+}
+
+#cart_top_logo a{
+display: block; /* Ссылка как блочный элемент */
+height: 60px; /* Высота на весь слой */
+font: 20px  Verdana;
+padding: 50px 0px 0px 16px; /* Поля вокруг текста */
+outline: 0px solid #000; /* временая рамка для разметки */
+text-decoration: none;
+}
+
+#cart_top_logo a:hover{
+display: block; /* Ссылка как блочный элемент */
+height: 60px; /* Высота на весь слой */
+font: 20px  Verdana;
+color: #CE3A00;
+padding: 50px 0px 0px 16px; /* Поля вокруг текста */
+outline: 0px solid #000; /* временая рамка для разметки */
+text-decoration: none;
+}
+
+#run_oder{
+position: absolute;
+top: 38px; /* Отступ сверху */
+left: 965px; /* Положение слоя от левого края */
+width: 18px;  /* Ширина блока */
+height: 80px; /* Высота блока */
+border-radius:8px 8px 8px 8px; /* Закругление рамки */
+border: 1px solid #cccccc; /* Параметры рамки */
+background-image: url(/media/img/order_.png);
+}
+
+#run_oder a{
+display: block; /* Ссылка как блочный элемент */
+height: 80px; /* Высота на весь слой */
+padding: 0px; /* Поля вокруг текста */
+outline: 0px solid #000; /* временая рамка для разметки */
+text-decoration: none;
+}
+
+#run_oder a:hover{
+background: #cccccc; /* Цвет фона */
+border-radius:8px 8px 8px 8px; /* Закругление рамки */
+background-image: url(/media/img/order_.png);
+}
+
+#del_tov{
+position: absolute;
+top: 100px; /* Отступ сверху */
+left: 850px; /* Положение слоя от левого края */
+width: 16px;  /* Ширина блока */
+height: 16px; /* Высота блока */
+}
+
+/*-------------------------------------------------- /Стиль для корзины */
+
+/*-------------------------------------------------- Меню в кабинете покупателя */
+
+ul#menu {
+    list-style-type:none; 
+    margin:0; 
+    padding:0;
+}
+
+ul#menu li a{
+	color:#909090; /* цвет букв в обычном состоянии */
+	background: url(/media/img/vert_menu_60.png) no-repeat 0 0; /* путь к изображению */
+	text-align: left; /* Выровнять содержимое */
+    text-decoration:none; 
+	width: 200px;
+	height: 30px;
+	display:block;
+	border:none;
+	text-shadow: #ddd 2px 2px 0; /* цвет тени у букв в обычном состоянии */	
+}
+
+ul#menu li a:hover, #menu li #current{
+	background-position: 50% 100%;
+	width: 200px;
+	height: 30px;
+	display:block;
+	color:#fff; /* цвет букв в активном состоянии */
+	text-shadow: #027219 2px 2px 0;	/* цвет тени у букв в активном состоянии */
+}
+
+ul#menu li a span{
+	font-family:sans-serif; /* Шрифт букв */
+	font-size:16px; /* размер букв */
+	padding:6px 0 0 20px;
+	display:block;	
+}
+
+/*-------------------------------------------------- / Меню в кабинете покупателя */
+
+/*-------------------------------------------------- Стили для фомы */
+#formmain{
+margin: 0 auto; /* Выравниваем по центру по горезонтали */
+padding: 0; /* Внутриние отступы */
+text-align: center; /* Выровнять содержимое по центру */
+width: 100%;  /* Ширина блока */
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+}
+
+#formmain table{
+margin: 0 auto; /* Выравниваем по центру по горезонтали */
+}
+
+/*-------------------------------------------------- /Стили для фомы */
+
+/*-------------------------------------------------- Стиль для элементов формы */
+
+#form_in {
+margin: 0 auto; /* Выравниваем по центру по горезонтали */
+padding: 0px 10px 10px 10px; /* Внутриние отступы */
+text-align: left; /* Выровнять содержимое */ 
+width: 500px;  /* Ширина блока */
+border-radius:15px 15px 15px 15px; /* Закругление рамки */
+border: 1px solid #336600; /* Параметры рамки */
+background: #C3E0C2; /* Цвет фона */
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+}
+
+#form_in input {
+    background: #f1f1f1;
+	padding: 6px 5px;
+	margin: 0 0 5px 0;
+	width: 256px;
+	border: 1px solid #336600;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 1px 1px #ccc inset;
+	-webkit-box-shadow: 0 1px 1px #ccc inset;
+	box-shadow: 0 1px 1px #ccc inset;
+}
+        
+#form_in input:focus {
+	background-color: #fff;
+	border-color: #e8c291;
+	outline: none;
+	-moz-box-shadow: 0 0 0 1px #EB5D25 inset;
+	-webkit-box-shadow: 0 0 0 1px #EB5D25 inset;
+	box-shadow: 0 0 0 1px #EB5D25 inset;
+}
+
+#form_in TEXTAREA {
+    background: #f1f1f1;
+	padding: 6px 5px;
+	margin: 0 0 5px 0;
+	border: 1px solid #336600;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 1px 1px #ccc inset;
+	-webkit-box-shadow: 0 1px 1px #ccc inset;
+	box-shadow: 0 1px 1px #ccc inset;
+}
+        
+#form_in TEXTAREA:focus {
+	background-color: #fff;
+	border-color: #e8c291;
+	outline: none;
+	-moz-box-shadow: 0 0 0 1px #EB5D25 inset;
+	-webkit-box-shadow: 0 0 0 1px #EB5D25 inset;
+	box-shadow: 0 0 0 1px #EB5D25 inset;
+}
+
+#form_in input[type="checkbox"] {
+    left: 220px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #EB5D25;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	-moz-box-shadow: 0 0px 0px #ccc inset;
+	-webkit-box-shadow: 0 0px 0px #ccc inset;
+	box-shadow: 0 0px 0px #ccc inset;    
+}
+
+#from_in_center {
+    
+}
+
+.form_in_submit{
+    cursor: pointer; /* Курсор при навидении */
+    border : solid 2px #336600;
+	border-radius : 5px 5px 20px 20px ;
+	moz-border-radius : 5px 5px 20px 20px ;
+	font-size : 18px;
+	color : #336600;
+	padding : 2px 10px;
+	background : #99CC66;
+	background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#99CC66), color-stop(100%,#e6e6e6));
+	background : -moz-linear-gradient(top, #99CC66 0%, #e6e6e6 100%);
+	background : -webkit-linear-gradient(top, #99CC66 0%, #e6e6e6 100%);
+	background : -o-linear-gradient(top, #99CC66 0%, #e6e6e6 100%);
+	background : -ms-linear-gradient(top, #99CC66 0%, #e6e6e6 100%);
+	background : linear-gradient(top, #99CC66 0%, #e6e6e6 100%);
+	filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#99CC66', endColorstr='#e6e6e6',GradientType=0 );
+}
+
+.form_in_submit:hover{
+    border : solid 2px #FF6633;
+}
+
+.submit{
+    cursor: pointer; /* Курсор при навидении */
+    border : solid 2px #336600;
+	border-radius : 5px 5px 5px 5px ;
+	moz-border-radius : 5px 5px 5px 5px ;
+	font-size : 14px;
+	color : #336600;
+	padding : 2px 10px;
+	background : #99CC66;
+}
+
+.submit:hover{
+    border : solid 2px #FF6633;
+}
+
+/*-------------------------------------------------- /Стиль для элементов формы */
+
+/*--------------------------------------------------  Стиль для листов */
+.pagination {
+    outline: 0px solid #cc0000; /* временая рамка для разметки */
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.page {
+    display: inline-block;
+    padding: 2px 5px;
+    margin-right: 2px;
+    border-radius: 3px;
+    border: solid 1px #c0c0c0;
+    background: #e9e9e9;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255, .8), 0px 1px 3px rgba(0,0,0, .1);
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #717171;
+    text-shadow: 0px 1px 0px rgba(255,255,255, 1);
+}
+
+.page:hover, .page.gradient:hover {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+    background: #fefefe;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FEFEFE), to(#f0f0f0));
+    background: -moz-linear-gradient(0% 0% 270deg,#FEFEFE, #f0f0f0);
+}
+
+.page.active {
+    border: none;
+    background: #616161;
+    box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .8);
+    color: #f0f0f0;
+    text-shadow: 0px 0px 3px rgba(0,0,0, .5);
+}
+
+.page.gradient {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f8f8f8), to(#e9e9e9));
+    background: -moz-linear-gradient(0% 0% 270deg,#f8f8f8, #e9e9e9);
+}
+
+/*-------------------------------------------------- /Стиль для листов */
+
+/*-------------------------------------------------- Плитка категорий товара */
+
+#catalog_list {
+width: 740px;  /* Ширина блока */
+margin: 0px 0px 20px 0px; /* Внешние отступы */
+outline: 0px solid #950; /* временая рамка для разметки */
+display: inline-block;
+}
+
+.catalog_plitka {
+width: 165px;
+height: 170px;
+display: inline-block; //
+display: inline; //zoom:1; 
+vertical-align: top; 
+padding: 8px;
+position: relative;
+}
+
+/*magic*/
+.catalog_plitka:hover {z-index: 2 !important; position: relative;}
+
+.sub_catalog {display:none;}
+.catalog_plitka:hover .sub_catalog{display:block;}
+.catalog_plitka:hover .catalog_plitka_decor{
+border: 2px solid #66CC66; /* Параметры рамки */
+-webkit-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+-moz-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+}
+
+.sub_catalog {
+margin: 10px 0 0; 
+padding: 10px 0 0;
+border-top: 1px solid #ddd;
+display:none;
+}
+
+.catalog_plitka_decor {
+background:#fff;
+overflow: hidden; //zoom:1;
+border: 2px solid #cccccc; /* Параметры рамки */
+border-radius: 10px; 	
+-moz-border-radius: 10px; 	
+-webkit-border-radius: 10px;
+-webkit-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+-moz-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+padding: 5px;
+}
+
+.catalog_img {
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+height: 130px; /* Высота */
+}
+
+.catalog_name {
+height: 25px; /* Высота */
+text-align: center; /* Выровнять содержимое по центру */
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+}
+
+/*-------------------------------------------------- / Плитка категорий товара */
+
+/*--------------------------------------------------  Плитка фотографий */
+
+#fotopl_list {
+width: 730px;  /* Ширина блока */
+margin: 0px 0px 20px 0px; /* Внешние отступы */
+outline: 0px solid #950; /* временая рамка для разметки */
+display: inline-block;
+}
+
+#fotopl {
+}
+
+#fotopl_img {
+height: 150px; /* Высота */
+width: 200px;  /* Ширина блока */
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+}
+
+#fotopl a{
+height: 150px; /* Высота */
+width: 200px;  /* Ширина блока */
+float: left;  /* Обтекание слева */
+padding: 5px; /* Внутриние отступы */
+margin: 0px 15px 0px 15px; /* Внешние отступы */
+border-radius:10px; /* Закругление рамки */
+text-align: center; /* Выровнять содержимое по центру */
+display: block; /* Ссылка как блочный элемент */
+border: 0px solid #cccccc; /* Параметры рамки */
+}
+
+/*-------------------------------------------------- / Плитка фотографий */
+
+/*-------------------------------------------------- Карточка товара */
+
+#cart {
+    cursor: pointer;
+}
+
+#pad_go {
+width: 730px;  /* Ширина блока */
+display: inline-block;
+outline: 0px solid #950; /* временая рамка для разметки */ 
+}
+
+#main_foto {
+float: left;  /* Обтекание слева */
+width: 200px;  /* Ширина блока */
+height: 180px; /* Высота */
+outline: 0px solid #950; /* временая рамка для разметки */ 
+}
+
+#right_info {
+float: right;  /* Обтекание слева */
+width: 520px;  /* Ширина блока */
+height: 130px; /* Высота */
+outline: 0px solid #950; /* временая рамка для разметки */ 
+}
+
+#go_name h1 {
+outline: 0px solid #950; /* временая рамка для разметки */
+text-align: left; /* Выровнять содержимое */ 
+}
+
+#kod {
+float: left;  /* Обтекание слева */
+width: 150px;  /* Ширина блока */
+height: 25px; /* Высота */
+border: 1px solid #006600; /* Параметры рамки */
+border-radius:10px; /* Закругление рамки */
+background: #cccccc; /* Цвет фона */
+margin: 0px 0px 10px 0px; /* Выравниваем по центру по горезонтали */
+text-align: center; /* Выровнять содержимое */
+}
+
+#brend {
+position: absolute;
+width: 340px;  /* Ширина блока */
+height: 30px; /* Высота */
+border: 0px solid #048000; /* Параметры рамки */
+margin: 50px 0px 10px 0px; /* Выравниваем по центру по горезонтали */
+text-align: left; /* Выровнять содержимое */
+}
+
+#cost {
+position: absolute;
+width: 340px;  /* Ширина блока */
+height: 40px; /* Высота */
+margin: 90px 0px 0px 0px; /* Выравниваем по центру по горезонтали */
+outline: 0px solid #950; /* временая рамка для разметки */
+text-align: left; /* Выровнять содержимое */
+}
+
+
+#go_cart {
+margin: 40px 0px 0px 350px; /* Выравниваем по центру по горезонтали */
+width: 80px;  /* Ширина блока */
+height: 80px; /* Высота */
+text-align: center; /* Выровнять содержимое */
+outline: 0px solid #cccccc; /* временая рамка для разметки */ 
+}
+
+#cart a{
+outline: 0px solid #950;
+margin: 0px 0px 0px 0px;
+}
+
+#go_info {
+clear: both; /* Отменяем действие float */
+min-height: 5px; /* Минимальная высота */
+outline: 0px solid #950; /* временая рамка для разметки */ 
+}
+
+#fotos {
+clear: both; /* Отменяем действие float */
+min-height: 5px; /* Минимальная высота */
+outline: 0px solid #950; /* временая рамка для разметки */ 
+}
+
+.go_price {white-space: nowrap; font-size: 14px; color:#FF6633;}
+.go_price span {font-size: 25px;}
+
+.go_kod {white-space: nowrap; font-size: 14px;}
+.go_kod span {font-size: 20px;}
+.go_brend span {font-size: 16px; color:#669900;}
+
+/*-------------------------------------------------- /Карточка товара */
+
+/*-------------------------------------------------- Кнопка подробнее */
+
+#buttona{
+padding: 1px 1px; /* Внутриние отступы */
+margin: 0px 0px 0px 2px; /* Внешние отступы */
+border-radius:8px 8px 8px 8px; /* Закругление рамки */
+border: 1px solid #336600; /* Параметры рамки */
+background: #99CC99; /* Цвет фона */
+}
+
+#buttona a{
+height:100%;
+display:block; 
+text-decoration: none;
+color: #000000;
+}
+
+#buttona a:hover{
+color: #e25000;
+}
+
+/*-------------------------------------------------- /Кнопка подробнее */
+
+/*-------------------------------------------------- Таблица */
+.tabgreen table{
+margin: 0 auto; /* Выравниваем по центру по горезонтали */
+}
+
+.tabgreen tr{
+}
+
+.tabgreen th{
+height: 25px; /* Высота */
+padding: 0px 5px; /* Внутриние отступы */ 
+background: #99CC99; /* Цвет фона */
+}
+
+.tabgreen td{
+padding: 0px 5px; /* Внутриние отступы */ 
+}
+
+.tabgreen td a{
+height:100%; 
+text-decoration: none;  
+}
+/*-------------------------------------------------- Таблица */
+

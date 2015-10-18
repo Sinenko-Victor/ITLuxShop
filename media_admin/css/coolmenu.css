@@ -1,0 +1,92 @@
+#cmsmenu {
+margin: 0 auto; /* Выравниваем по центру по горезонтали */ 
+left: 50%;
+width: 1100px;  /* Ширина блока */
+height: 25px;
+outline: 0px solid #002387; /* временая рамка для разметки */
+background: #2f8be8;
+border-radius:0px 0px 10px 10px; /* Закругление рамки */
+}
+
+
+/* Structure
+------------------------------------------*/
+#coolMenu,
+#coolMenu ul {
+	list-style: none;
+}
+#coolMenu {
+    margin-left: 100px; /* отрицательный отступ равный 1/2 ширины (width) позиционируемого блока */
+	float: left;
+}
+#coolMenu > li {
+	float: left;
+}
+#coolMenu li a {
+	display: block;
+	height: 25px;
+	line-height: 2em;
+	padding: 0 1.5em;
+	text-decoration: none;
+}
+#coolMenu ul {
+	position: absolute;
+	display: none;
+	z-index: 999;
+}
+#coolMenu ul li a {
+	width: 99px;
+}
+#coolMenu li:hover ul.noJS {
+	display: block; 
+}
+
+
+/* Main menu
+------------------------------------------*/
+#coolMenu {
+	font-family: Arial;
+	font-size: 12px;
+	background: #2f8be8;
+}
+#coolMenu > li > a {
+	color: #fff;
+	font-weight: bold;
+}
+#coolMenu > li:hover > a {
+	background: #f09d28;
+	color: #000;
+}
+
+
+/* Submenu
+------------------------------------------*/
+#coolMenu ul {
+	background: #f09d28;
+}
+#coolMenu ul li a {
+	color: #000;
+}
+#coolMenu ul li:hover a {
+	background: #ffc97c;
+}
+
+
+/* 2nd Menu */
+ul#navmenu-v ul,
+ul#navmenu-v ul ul,
+ul#navmenu-v ul ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 135px;
+}
+
+ul#navmenu-v li:hover ul,
+ul#navmenu-v ul li:hover ul,
+ul#navmenu-v ul ul li:hover ul,
+ul#navmenu-v li.iehover ul,
+ul#navmenu-v ul li.iehover ul,
+ul#navmenu-v ul ul li.iehover ul {
+  display: block;
+}

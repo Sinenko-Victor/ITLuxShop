@@ -1,0 +1,54 @@
+
+.catalog_plitka {
+width: 165px;
+height: 175px;
+display: inline-block; //
+display: inline; //zoom:1; 
+vertical-align: top; 
+padding: 8px;
+position: relative;
+}
+
+/*magic*/
+.catalog_plitka:hover {z-index: 2 !important; position: relative;}
+
+.sub_catalog {display:none;}
+.catalog_plitka:hover .sub_catalog{display:block;}
+.catalog_plitka:hover .catalog_plitka_decor{
+border: 2px solid #66CC66; /* Параметры рамки */
+-webkit-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+-moz-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+}
+
+.sub_catalog {
+margin: 10px 0 0; 
+padding: 10px 0 0;
+border-top: 1px solid #ddd;
+display:none;
+}
+
+.catalog_plitka_decor {
+background:#fff;
+overflow: hidden; //zoom:1;
+border: 2px solid #cccccc; /* Параметры рамки */
+border-radius: 10px; 	
+-moz-border-radius: 10px; 	
+-webkit-border-radius: 10px;
+-webkit-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+-moz-box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+box-shadow: rgba(0,0,0,0.4) 0px 0px 10px;
+padding: 5px;
+}
+
+.catalog_img {
+outline: 0px solid #cc0000; /* временая рамка для разметки */
+height: 130px; /* Высота */
+}
+
+.catalog_name {
+height: 25px; /* Высота */
+text-align: center; /* Выровнять содержимое по центру */
+outline: 1px solid #cc0000; /* временая рамка для разметки */
+}
+

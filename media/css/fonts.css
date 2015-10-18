@@ -1,0 +1,41 @@
+body {
+font: 12px  Verdana; 
+}
+
+.namebrend {
+color: #669900;
+}
+
+a{
+    color: #666666;
+    font: 12px  Verdana;
+    text-decoration: none;
+}
+
+a:hover{
+    font: 12px  Verdana;
+    color: #FF6633;
+}
+
+/* Стиль для названия категории - ссилка */
+.cadirlink a{
+    text-decoration: none;
+    font: 12px  Verdana;
+    color: #666666;
+}
+
+.cadirlink a:hover{
+    text-decoration: underline;
+    font: 12px  Verdana;
+    color: #FF6633;
+}
+
+.cadirlinka a{
+    text-decoration: none;
+    font: 12px  Verdana;
+    color: #FF6633;
+}
+
+table{
+    font: 13px  Verdana;
+}

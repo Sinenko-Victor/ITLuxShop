@@ -1,0 +1,156 @@
+.text_1 {
+color: #022ead;
+font: 13px  Verdana; 
+}
+
+.text_2 {
+color : #996633;
+font : 14px  Verdana; 
+}
+
+.text_3 {
+color: #880000;
+font: 14px  Verdana; 
+}
+
+.text_4 {
+color : #666666;
+font : 11px  Verdana; 
+}
+
+.text_5 {
+color : #ссс;
+font : 16px  Verdana; 
+}
+
+.text_6 {
+color : #C33F00;
+font : 11px  Verdana; 
+}
+
+.text_7 {
+color: #880000;
+font: 16px  Verdana; 
+}
+
+.text_8 {
+color : #666666;
+font : 12px  Verdana; 
+}
+
+.text_9 {
+color: #880000;
+font: 20px  Verdana; 
+}
+
+.text_10 {
+font: 14px  Verdana;
+}
+
+#content h1{
+margin: 0; /* Внешние отступы */
+font : 20px  Arial, Arial, Helvetica, sans-serif;
+color : #000099;
+text-align: center;
+}
+
+#gotable h1{
+    margin: 0; /* Внешние отступы */
+    font : 16px  Arial, Arial, Helvetica, sans-serif;
+    color : #505050;
+    text-align: left;
+}
+
+#info h1{
+margin: 0; /* Внешние отступы */
+font : 20px  Arial, Arial, Helvetica, sans-serif;
+color : #000099;
+text-align: center;
+}
+
+/* Стили для ссылок */
+
+a{
+font: 12px  Verdana;
+color: #4D3326;
+}
+
+.link_1 a:link{
+color: #FFDD00;
+font: 13px  Verdana; 
+text-decoration: none;
+}
+.link_1 a:visited{
+color: #FFDD00;
+font: 13px  Verdana; 
+text-decoration: none;
+}
+.link_1 a:active{
+color: #FFDD00;
+font: 13px  Verdana; 
+text-decoration: none;
+}
+.link_1 a:hover{
+color: #FFDD00;
+font: 13px  Verdana; 
+text-decoration: none;
+}
+
+.link_2 a:link{
+color: #fff; 
+text-decoration: none;
+}
+.link_2 a:visited{
+color: #fff; 
+text-decoration: none;
+}
+.link_2 a:active{
+color: #fff; 
+text-decoration: none;
+}
+.link_2 a:hover{
+color: #fff;
+text-decoration: underline;
+}
+
+.link_3 a{
+    text-decoration: none;
+    font: 13px  Verdana;
+    color: #505050;
+}
+
+.link_3 a:hover{
+    text-decoration: underline;
+    font: 13px  Verdana;
+    color: #663300;
+}
+
+.link_4 a{
+    text-decoration: none;
+    font: 15px  Verdana;
+    color: #CE3A00;
+}
+
+.link_5 a{
+    font: 15px  Verdana;
+    color: #3000FF;
+}
+
+/* Стиль для названия категории - ссилка */
+.cadirlink a{
+    text-decoration: none;
+    font: 12px  Verdana;
+    color: #4D3326;
+}
+
+.cadirlink a:hover{
+    text-decoration: underline;
+    font: 12px  Verdana;
+    color: #FF6600;
+}
+
+.cadirlinka a{
+    text-decoration: none;
+    font: 12px  Verdana;
+    color: #FF6600;
+}

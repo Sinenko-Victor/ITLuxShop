@@ -1,0 +1,8 @@
+
+#pages_dir li,#pages_dir il,#pages_dir ul,#pages_dir table,#pages_dir td,#pages_dir tr,#pages_dir textarea,#pages_dir description,#pages_dir inputfield {font-family: Verdana, Tahoma, Arial; font-size: 10px; font-weight: normal; text-align: left; color: #222222;} 
+
+img { border = 0px; } 
+
+.treenode { font-size: 11px; font-weight: normal; color: #000000; }
+.treenodetext { padding-left: 2px; font-size: 11px; font-weight: normal; color: #000000; }
+

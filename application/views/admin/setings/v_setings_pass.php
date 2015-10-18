@@ -1,0 +1,33 @@
+<div id="pages_list">
+    <div id="pages_header">
+        <h1><?=$page_title?></h1>
+    </div>
+    <div id="pages_dir">
+        <?=$menuset?>       
+    </div>
+    <div id="pages_edit">
+        
+<br/>
+<?=Form::open('/admin/setings/pass')?>
+<div id='form_in'>
+    <p>
+        <?=Form::label('password', 'Новый пароль')?>:<br/>
+        <?=Form::password('password', '', array('size' => 30, 'placeholder' => 'Введите пароль', 'required'))?>
+        <span class="error"><?php echo Arr::path($errors, '_external.password') ?></span>        
+    </p>
+    <p>
+        <?=Form::label('password_confirm', 'Повторите новый пароль')?>:<br/>
+        <?=Form::password('password_confirm', '', array('size' => 30, 'placeholder' => 'Введите пароль', 'required'))?>
+        <span class="error"><?php echo Arr::path($errors, '_external.password_confirm') ?></span>
+    </p>  
+</div>
+<br/>
+
+<?=Form::submit('submit', ' Сохранить ', array('class' => 'form_in_submit'))?>
+<span class="error"><?=$passok?></span>
+<?=Form::close()?>
+        
+    </div>
+    <div id="pages_footer">
+    </div>
+</div>
